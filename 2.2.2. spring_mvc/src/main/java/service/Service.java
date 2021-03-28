@@ -22,9 +22,9 @@ public class Service {
         return carsList;
     }
 
-    public static List<Car> selectCars(Integer ammount) {
+    public static List<Car> selectCars(Integer kolichestvo) {
 
         createCars();
-        return ((ammount != null) && (ammount <= carsList.size() - 1)) ? carsList.subList(0, ammount) : carsList;
+        return ((kolichestvo != null) && (kolichestvo <= carsList.size() - 1)) ? carsList.subList(0, kolichestvo) : carsList;
     }
 }
